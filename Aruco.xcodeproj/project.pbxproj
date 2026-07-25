@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B87374983014803C00089EB6 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = B87374973014803C00089EB6 /* Core */; };
+		B873749A301480E900089EB6 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = B8737499301480E900089EB6 /* Core */; };
+		B873749C301480F200089EB6 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = B873749B301480F200089EB6 /* Core */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B851DADF3002208A001259F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,7 @@
 		B851DAD130022089001259F8 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B851DADE3002208A001259F8 /* iOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B851DAE83002208A001259F8 /* iOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B873749530147A1500089EB6 /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87374983014803C00089EB6 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B873749A301480E900089EB6 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B873749C301480F200089EB6 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +85,11 @@
 		B851DAC830022089001259F8 = {
 			isa = PBXGroup;
 			children = (
+				B8737494301479EF00089EB6 /* Packages */,
 				B851DAD330022089001259F8 /* iOSApp */,
 				B851DAE13002208A001259F8 /* iOSAppTests */,
 				B851DAEB3002208A001259F8 /* iOSAppUITests */,
+				B87374963014803C00089EB6 /* Frameworks */,
 				B851DAD230022089001259F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +102,21 @@
 				B851DAE83002208A001259F8 /* iOSAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B8737494301479EF00089EB6 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				B873749530147A1500089EB6 /* Core */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		B87374963014803C00089EB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +139,7 @@
 			);
 			name = iOSApp;
 			packageProductDependencies = (
+				B87374973014803C00089EB6 /* Core */,
 			);
 			productName = Aruco;
 			productReference = B851DAD130022089001259F8 /* iOSApp.app */;
@@ -135,6 +163,7 @@
 			);
 			name = iOSAppTests;
 			packageProductDependencies = (
+				B8737499301480E900089EB6 /* Core */,
 			);
 			productName = ArucoTests;
 			productReference = B851DADE3002208A001259F8 /* iOSAppTests.xctest */;
@@ -158,6 +187,7 @@
 			);
 			name = iOSAppUITests;
 			packageProductDependencies = (
+				B873749B301480F200089EB6 /* Core */,
 			);
 			productName = ArucoUITests;
 			productReference = B851DAE83002208A001259F8 /* iOSAppUITests.xctest */;
@@ -615,6 +645,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B87374973014803C00089EB6 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		B8737499301480E900089EB6 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+		B873749B301480F200089EB6 /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B851DAC930022089001259F8 /* Project object */;
 }
